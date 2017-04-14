@@ -1,3 +1,5 @@
+var chatServer = require('./lib/chat_server');
+chatServer.listen(server);
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
@@ -47,6 +49,3 @@ function serveStatic(response,cache,absPath){
 		});
 	}
 }
-
-var chatServer = require('./lib/chat_server');
-chat_server.listen(server);
